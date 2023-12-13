@@ -1,0 +1,16 @@
+.navbar {
+    display: flex;
+    width: 100.9375rem;
+    align-items: flex-start;
+    gap: 5.5625rem;
+    color: #FFF;
+    font-family: 'League Gothic';
+    font-size: 4.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.navItem.selected {
+    color: #BF94FF;
+}
