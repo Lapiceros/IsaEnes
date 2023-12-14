@@ -2,7 +2,7 @@ import { Route, Routes} from "react-router-dom";
 import Home from './pages/Home'
 import About from './pages/about'
 import Events from './components/events'
-import MusicPage from './pages/music/MusicPage'
+import MusicPage from './components/music/MusicPage'
 import Art from './components/art'
 import Press from './components/press' 
 import Collaborations from './components/collaboration'
@@ -23,15 +23,3 @@ function Router(){
 
 export default Router;
 
-
-import "react";
-import { Route, Routes } from "react-router-dom";
-import MusicPage from "./pages/MusicPage/MusicPage";
-
-export default function Router() {
-  return (
-    <Routes>
-      <Route path="/music" element={<MusicPage />} />
-    </Routes>
-  );
-}
