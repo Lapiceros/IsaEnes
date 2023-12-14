@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function Art() {
+function Art() {
   return (
     <div>Art</div>
   )
 }
+
+export default Art

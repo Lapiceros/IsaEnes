@@ -1,7 +1,10 @@
 import React from 'react'
 
-export default function Press() {
+function Press() {
   return (
-    <div>Press</div>
+    <h1>Isa Enes</h1>
+    
   )
 }
+
+export default Press
