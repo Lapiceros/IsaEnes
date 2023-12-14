@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Art() {
   return (
-    <div>Art</div>
+    <h1>Art</h1>
   )
 }
