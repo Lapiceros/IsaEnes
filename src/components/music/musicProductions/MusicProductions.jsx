@@ -1,4 +1,4 @@
-import Swiper from './Swiper'; 
+import Swiper from '../swipper/Swipper'
 
 export default function MusicProductions(){
     return(
