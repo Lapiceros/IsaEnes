@@ -2,7 +2,7 @@ import React from 'react'
 
 function Art() {
   return (
-    <div>Art</div>
+    <h1>Art</h1>
   )
 }
 
