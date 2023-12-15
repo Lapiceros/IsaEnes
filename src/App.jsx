@@ -15,7 +15,7 @@ function App() {
     <footer>
     <nav>
             <ul>
-                <li className='route'><NavLink to="/about" activeClassname= 'active'>about</NavLink></li>
+                <li className='route'><NavLink to="/about" activeClassname= 'active'>About</NavLink></li>
                 <li className='route'><NavLink to="/music" activeClassname= 'active'>Music</NavLink></li>
                 <li className='route'><NavLink to="/" activeClassname= 'active' exact>Home</NavLink></li>
             </ul>

@@ -1,11 +1,11 @@
 import { Route, Routes} from "react-router-dom";
 import Home from './pages/Home'
-import About from './pages/about'
-import Events from './components/events'
+import About from './components/about/About'
+import Events from './components/events/Events'
 import MusicPage from './components/music/MusicPage'
-import Art from './components/art'
-import Press from './components/press' 
-import Collaborations from './components/collaboration'
+import Art from './components/art/Art'
+import Press from './components/press/Press' 
+import Collaborations from './components/collaboration/Collaborations'
 
 function Router(){
     return(

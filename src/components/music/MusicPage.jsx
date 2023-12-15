@@ -5,7 +5,9 @@ import MusicProductions from './musicProductions/MusicProductions'
 export default function MusicPage(){
     return(
         <div>
+            <LiveSets />
             <MusicProductions/>
+            
             
         </div>
     )
