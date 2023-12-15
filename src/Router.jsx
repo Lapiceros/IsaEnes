@@ -1,7 +1,7 @@
 import { Route, Routes} from "react-router-dom";
 import Home from './pages/Home'
 import About from './components/about/About'
-import Music from "./components/music/Music";
+import MusicPage from "./pages/MusicPage/MusicPage"
 
 
 function Router(){
@@ -9,7 +9,7 @@ function Router(){
         <Routes>
             <Route path='/' Component={Home} />
             <Route path='/about' Component={About} />
-            <Route path='/music' Component={Music} />
+            <Route path='/music' Component={MusicPage} />
         </Routes>
     )
 }
