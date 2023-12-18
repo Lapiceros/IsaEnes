@@ -14,7 +14,7 @@ function App() {
       <Router/>
     </main>
     <footer>
-      <NavBar />
+      <NavBar/>
     </footer>
     </>
   )
