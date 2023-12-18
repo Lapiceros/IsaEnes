@@ -1,5 +1,5 @@
 import React from "react";
-import Swiper from "../../components/swiper/Swiper";
+import Swiper from "../swiper/Swiper";
 
 import isaimage1 from "../../assets/img/musicProductionsimg/isasproduction.png";
 import isaimage2 from "../../assets/img/musicProductionsimg/isasproduction2.png";

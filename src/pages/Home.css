@@ -1,3 +1,5 @@
-h1{
-    margin-top: 50vh;
+#title{
+    color: white;
+    font-size: 5rem;
+    letter-spacing: 5px;
 }

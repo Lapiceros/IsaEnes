@@ -1,0 +1,41 @@
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+nav{
+    bottom: 2rem;
+
+}
+
+li{
+    list-style: none;
+}
+
+.menu > li{
+    position: relative;
+    font-size: 3rem;
+    display: inline-block;
+    margin: 30px;
+}
+
+.subMenu{
+    display: none;
+    transition: opacity 1s;
+}
+
+.subMenu li{
+    display: block;
+    padding: 15px;
+
+}
+.menu li:hover .subMenu{
+    display: block;
+}
+.route:hover{
+    color: #BF94FF;
+}
+
+.active{
+    color: #BF94FF;
+}

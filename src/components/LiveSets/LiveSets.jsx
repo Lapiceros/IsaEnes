@@ -1,5 +1,5 @@
 import React from "react";
-import Swiper from "../../components/swiper/Swiper";
+import Swiper from "../swiper/Swiper";
 import "./LiveSets.css"
 
 import albumImage1 from "../../assets/img/liveSetsimg/album1.jpeg";

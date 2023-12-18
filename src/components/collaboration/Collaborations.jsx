@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Collaborations() {
   return (
-    <div>Collaborations</div>
+    <h1>Collaborations</h1>
   )
 }
