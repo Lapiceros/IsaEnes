@@ -1,41 +1,44 @@
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-nav{
-    bottom: 2rem;
-
-}
-
-li{
+li {
     list-style: none;
+    color: #fff;
 }
 
-.menu > li{
+.menu > li {
     position: relative;
-    font-size: 3rem;
+    font-size: 2rem;
     display: inline-block;
-    margin: 30px;
+    margin: 20px;
 }
 
-.subMenu{
+.subMenu {
     display: none;
-    transition: opacity 1s;
+    position: absolute;
+    bottom: 100%; 
+    left: 0;
 }
 
-.subMenu li{
+.subMenu li {
     display: block;
-    padding: 15px;
-
+    margin-bottom: 10%;
+    
 }
-.menu li:hover .subMenu{
-    display: block;
-}
-.route:hover{
+.subMenu li:hover{
     color: #BF94FF;
 }
 
-.active{
+.menu li:hover .subMenu {
+    display: block;
+}
+
+.route:hover {
+    color: #BF94FF;
+}
+
+.active {
     color: #BF94FF;
 }

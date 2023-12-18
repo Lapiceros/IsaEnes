@@ -9,18 +9,19 @@ export default function NavBar() {
             <li className='route'><NavLink to="/" activeClassname= 'active'>HOME</NavLink></li>
             <li className='route'><NavLink to="/about" activeClassname= 'active'>ABOUT</NavLink></li>
             <li className='route'><NavLink to="/events" activeClassname= 'active'>EVENTS</NavLink></li>
-            <li className='route'>
+            <li className='route'><NavLink to="/music" activeClassname= 'active'>MUSIC</NavLink>
             <ul className='subMenu'>
                 <li>LIVE SETS</li>
                 <li>SOUNCLOUD</li>
             </ul>
-            <NavLink to="/music" activeClassname= 'active'>MUSIC</NavLink>
             </li>
             <li className='route'>
-            <ul className='subMenu'>
-                <li>Art Direction</li>
-                <li>JEWELRY</li>
-            </ul><NavLink to="/art" activeClassname= 'active'>ART</NavLink></li>
+            <NavLink to="/art" activeClassname= 'active'>ART</NavLink>
+                <ul className='subMenu'>
+                    <li><a href='/'>Art Direction</a></li>
+                    <li>JEWELRY</li>
+                </ul>
+            </li>
             <li className='route'><NavLink to="/press" activeClassname= 'active'>PRESS</NavLink></li>
             <li className='route'><NavLink to="/collaborations" activeClassname= 'active'>COLLABORATIONS</NavLink></li>
         </ul>
