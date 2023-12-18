@@ -1,16 +1,22 @@
 import React from "react";
 import "./Swiper.css";
 
-
 export default function Swiper({ images }) {
   return (
-    <div>
-      <div>
-        {images.map((image, index) => (
-          <img key={index} src={image} alt={`Description ${index + 1}`} />
-        ))}
+    <div className="galleryContainer">
+      <div className="gallery">
+        <div className="photosContainer">
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image.src}
+              alt={`Description ${index + 1}`}
+              className={image.className}
+            />
+          ))}
+        </div>
       </div>
-      <div className="gallery-controls"></div>
     </div>
   );
 }
+

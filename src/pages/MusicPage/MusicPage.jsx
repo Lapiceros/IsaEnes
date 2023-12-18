@@ -1,9 +1,9 @@
-import Swiper from "../../components/swiper/Swiper";
+import MusicProductions from "../../components/musicProductions/MusicProductions";
 
-export default function MusicPage(){
-    return(
-        <div>
-            <Swiper/>
-        </div>
-    )
+export default function MusicPage() {
+  return (
+    <div>
+      <MusicProductions />
+    </div>
+  );
 }
