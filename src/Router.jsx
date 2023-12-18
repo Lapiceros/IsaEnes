@@ -1,8 +1,8 @@
 import { Route, Routes} from "react-router-dom";
 import Home from './pages/Home'
-import About from './components/about/About'
-import Music from "./components/music/Music";
-import Art from "./components/art/Art";
+import AboutPage from './pages/AboutPage'
+import MusicPage from "./pages/MusicPage/MusicProductionsPage"
+import LiveSetsPage from "./pages/LiveSetsPage/LiveSetsPage";
 import Collaborations from "./components/collaboration/Collaborations";
 import Events from "./components/events/Events";
 import Press from "./components/press/Press";
@@ -23,4 +23,3 @@ function Router(){
 }
 
 export default Router;
-
