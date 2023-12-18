@@ -12,21 +12,22 @@ export default function NavBar() {
 
 
 
-            <li className='route'>
+            <li className='route'><NavLink to="/music" activeClassname= 'active'>MUSIC</NavLink>
             <ul className='subMenu'>
                 <li className='route'><NavLink to="/livesets" activeClassname= 'active'>LIVE SETS</NavLink></li>
                 <li className='route'><NavLink to="/musicproductions" activeClassname= 'active'>MUSIC PRODUCTIONS</NavLink></li>
             </ul>
-            <NavLink to="/music" activeClassname= 'active'>MUSIC</NavLink>
             </li>
 
 
 
             <li className='route'>
-            <ul className='subMenu'>
-                <li>Art Direction</li>
-                <li>JEWELRY</li>
-            </ul><NavLink to="/art" activeClassname= 'active'>ART</NavLink></li>
+            <NavLink to="/art" activeClassname= 'active'>ART</NavLink>
+                <ul className='subMenu'>
+                    <li><a href='/'>Art Direction</a></li>
+                    <li>JEWELRY</li>
+                </ul>
+            </li>
             <li className='route'><NavLink to="/press" activeClassname= 'active'>PRESS</NavLink></li>
             <li className='route'><NavLink to="/collaborations" activeClassname= 'active'>COLLABORATIONS</NavLink></li>
         </ul>
