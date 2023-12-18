@@ -12,7 +12,7 @@ export default function NavBar() {
             <li className='route'><NavLink to="/music" activeClassname= 'active'>MUSIC</NavLink>
             <ul className='subMenu'>
                 <li>LIVE SETS</li>
-                <li>SOUNCLOUD</li>
+                <li><a href="https://soundcloud.com/isaenes" target="_blank" >SOUNCLOUD</a></li>
             </ul>
             </li>
             <li className='route'>
