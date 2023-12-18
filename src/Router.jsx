@@ -1,27 +1,23 @@
 import { Route, Routes} from "react-router-dom";
 import Home from './pages/Home'
-import About from './components/about/about/About'
-import Events from './components/events/Events'
-import MusicProductions from './components/music/musicProductions/MusicProductions'
-import LiveSets from "./components/music/liveSets/LiveSets";
-import ArtDirection from "./components/art/artDirection/ArtDirection";
-import Jewlery from "./components/art/jewlery/Jewelery";
-import Press from './components/press/Press' 
-import Collaborations from './components/collaboration/Collaborations'
+import About from './components/about/About'
+import Music from "./components/music/Music";
+import Art from "./components/art/Art";
+import Collaborations from "./components/collaboration/Collaborations";
+import Events from "./components/events/Events";
+import Press from "./components/press/Press";
 
 
 function Router(){
     return(
         <Routes>
-            <Route path='/' element={Home} />
-            <Route path='/about' element={About} />
-            <Route path='/events' element={Events} />
-            <Route path='/musicproductions' element={MusicProductions} />
-            <Route path='/livesets' element={LiveSets} />
-            <Route path='/artdirection' element={ArtDirection} />
-            <Route path='/jewlery' element={Jewlery} />
-            <Route path='/press' element={Press} />
-            <Route path='/collaborations' element={Collaborations} />
+            <Route path='/' Component={Home} />
+            <Route path='/about' Component={About} />
+            <Route path='/art' Component={Art} />
+            <Route path='/collaborations' Component={Collaborations} />
+            <Route path='/events' Component={Events} />
+            <Route path='/press' Component={Press} />
+            <Route path='/music' Component={Music} />
         </Routes>
     )
 }
