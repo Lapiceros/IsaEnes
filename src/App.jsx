@@ -13,10 +13,10 @@ function App() {
       <Router/>
     </main>
     <footer>
-      <NavBar />
+      <NavBar/>
     </footer>
     </>
   )
 }
 
-export default App
+export default App;

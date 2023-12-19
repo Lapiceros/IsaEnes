@@ -1,7 +1,8 @@
 import { Route, Routes} from "react-router-dom";
 import Home from './pages/Home'
 import About from './components/about/About'
-import Music from "./components/music/Music";
+import MusicPage from "./pages/MusicPage/MusicProductionsPage"
+import LiveSetsPage from "./pages/LiveSetsPage/LiveSetsPage";
 import Art from "./components/art/Art";
 import Collaborations from "./components/collaboration/Collaborations";
 import Events from "./components/events/Events";
@@ -17,7 +18,8 @@ function Router(){
             <Route path='/collaborations' Component={Collaborations} />
             <Route path='/events' Component={Events} />
             <Route path='/press' Component={Press} />
-            <Route path='/music' Component={Music} />
+            <Route path='/musicproductions' Component={MusicPage} />
+            <Route path='/livesets' Component={LiveSetsPage} />
         </Routes>
     )
 }
