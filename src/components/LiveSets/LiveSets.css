@@ -1,27 +1,29 @@
-.carousel-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 600px; /* En lugar de 'width', usa 'max-width' para que sea adaptable */
-    width: 100%; /* Asegura que ocupe el ancho completo en pantallas más pequeñas */
-    height: 100vh;
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-}
-
-.carousel-inner {
-    border-radius: 16px;
+#app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
 }
 
 
-
-
-.livesets-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 500%;
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
 
 /* Consulta de medios para pantallas más pequeñas (por ejemplo, dispositivos móviles) */
 @media screen and (max-width: 600px) {
