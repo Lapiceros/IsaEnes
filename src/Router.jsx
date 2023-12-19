@@ -7,7 +7,7 @@ import ArtDirectionsPage from "./pages/artDirectionsPage/ArtDirectionsPage";
 import JewelleryPage from "./pages/jewelleryPage/JewelleryPage";
 import CollaborationsPage from "./pages/collaborationsPage/CollaborationsPage";
 import EventsPage from "./pages/eventsPage/EventsPage";
-
+import PressPage from './pages/pressPage/PressPage'
 
 
 function Router(){
@@ -19,7 +19,7 @@ function Router(){
             <Route path='/jewellery' Component={JewelleryPage} />
             <Route path='/collaborations' Component={CollaborationsPage} />
             <Route path='/events' Component={EventsPage} />
-            
+            <Route path="/press" Component={PressPage} />
             <Route path='/musicproductions' Component={MusicPage} />
             <Route path='/livesets' Component={LiveSetsPage} />
         </Routes>
