@@ -1,4 +1,3 @@
-
 import './App.css'
 import Router from './Router'
 import NavBar from './components/nav/NavBar'
@@ -14,10 +13,10 @@ function App() {
       <Router/>
     </main>
     <footer>
-      <NavBar />
+      <NavBar/>
     </footer>
     </>
   )
 }
 
-export default App
+export default App;

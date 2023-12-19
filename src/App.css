@@ -1,5 +1,5 @@
-
-body{
+body {
+  position: relative;
   background: url(../src/assets/img/giphy.gif);
   background-position: center center;
   /* background: linear-gradient(180deg, rgb(236, 213, 232)0%, rgb(50, 112, 118)100%); */
@@ -7,6 +7,19 @@ body{
   background-size: cover;
   background-attachment: fixed;
 }
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000; /* Color de fondo, puedes ajustarlo según tus necesidades */
+  opacity: 0.3; /* Ajusta la opacidad según tus necesidades (0 totalmente transparente, 1 totalmente opaco) */
+  z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido principal */
+}
+
 h1{
   margin-top: 50vh;
 }
@@ -21,9 +34,12 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 20px;
+  bottom: 10px;
   left: 0;
   width: 100vw;
   
+}
+a{
+  text-decoration: none;
 }
 

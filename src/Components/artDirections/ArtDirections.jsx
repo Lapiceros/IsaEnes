@@ -7,12 +7,12 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
-import './Collaborations.css';
+import './ArtDirections.css';
 
 // import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
-export default function Collaborations() {
+export default function ArtDirections() {
   return (
     <>
       <Swiper

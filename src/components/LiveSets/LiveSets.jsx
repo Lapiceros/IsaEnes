@@ -7,12 +7,19 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
-import './Collaborations.css';
+import album1 from "../../assets/liveSetsimg/album1.jpeg"
+import album2 from "../../assets/liveSetsimg/album2.jpeg"
+import album3 from "../../assets/liveSetsimg/album3.jpeg"
+import album4 from "../../assets/liveSetsimg/album4.jpeg"
+import album5 from "../../assets/liveSetsimg/album5.jpeg"
+import album6 from "../../assets/liveSetsimg/album6.jpeg"
+
+import './LiveSets.css';
 
 // import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
-export default function Collaborations() {
+export default function LiveSets() {
   return (
     <>
       <Swiper
@@ -32,31 +39,22 @@ export default function Collaborations() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          <img href="" src={album1} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          <img href="" src={album2} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          <img href="" src={album3} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          <img href="" src={album4} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+          <img href="https://soundcloud.com/isaenes/sets/techno-breaks-mixes" src={album5} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+          <img href="" src={album6} />
         </SwiperSlide>
       </Swiper>
     </>

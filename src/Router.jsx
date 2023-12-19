@@ -1,11 +1,13 @@
 import { Route, Routes} from "react-router-dom";
 import Home from './pages/Home'
 import About from './components/about/About'
-import Music from "./components/music/Music";
-import Art from "./components/art/Art";
-import Collaborations from "./components/collaboration/Collaborations";
-import Events from "./components/events/Events";
-import Press from "./components/press/Press";
+import MusicPage from "./pages/musicPage/MusicProductionsPage"
+import LiveSetsPage from "./pages/liveSetsPage/LiveSetsPage";
+import ArtDirectionsPage from "./pages/artDirectionsPage/ArtDirectionsPage";
+import JewelleryPage from "./pages/jewelleryPage/JewelleryPage";
+import CollaborationsPage from "./pages/collaborationsPage/CollaborationsPage";
+import EventsPage from "./pages/eventsPage/EventsPage";
+
 
 
 function Router(){
@@ -13,11 +15,13 @@ function Router(){
         <Routes>
             <Route path='/' Component={Home} />
             <Route path='/about' Component={About} />
-            <Route path='/art' Component={Art} />
-            <Route path='/collaborations' Component={Collaborations} />
-            <Route path='/events' Component={Events} />
-            <Route path='/press' Component={Press} />
-            <Route path='/music' Component={Music} />
+            <Route path='/artdirections' Component={ArtDirectionsPage} />
+            <Route path='/jewellery' Component={JewelleryPage} />
+            <Route path='/collaborations' Component={CollaborationsPage} />
+            <Route path='/events' Component={EventsPage} />
+            
+            <Route path='/musicproductions' Component={MusicPage} />
+            <Route path='/livesets' Component={LiveSetsPage} />
         </Routes>
     )
 }
