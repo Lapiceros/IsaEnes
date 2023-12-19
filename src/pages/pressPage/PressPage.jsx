@@ -1,9 +1,9 @@
-import Press from "../../Components/press/Press";
+import PressComponents from "../../Components/pressComponents/PressComponents";
 
 export default function PressPage() {
   return (
     <div>
-      <Press />
+      <PressComponents/>
     </div>
   );
 }
