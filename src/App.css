@@ -1,27 +1,27 @@
 body {
-    background: linear-gradient(358deg, #0029d0, #9800d0, #d000a3, #6000ff, #0ed789);
-    background-size: 1000% 1000%;
+  overflow: hidden;
+  background: linear-gradient(270deg, #12ca9b, #e10a8d, #220ae1, #640ae1, #e41818, #19bb51);
+  background-size: 1200% 1200%;
 
-    -webkit-animation: AnimationName 18s ease infinite;
-    -moz-animation: AnimationName 18s ease infinite;
-    animation: AnimationName 18s ease infinite;
-    overflow: hidden;
+  -webkit-animation: AnimationName 16s ease infinite;
+  -moz-animation: AnimationName 16s ease infinite;
+  animation: AnimationName 16s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
-    0%{background-position:51% 0%}
-    50%{background-position:50% 100%}
-    100%{background-position:51% 0%}
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
 }
 @-moz-keyframes AnimationName {
-    0%{background-position:51% 0%}
-    50%{background-position:50% 100%}
-    100%{background-position:51% 0%}
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
 }
 @keyframes AnimationName {
-    0%{background-position:51% 0%}
-    50%{background-position:50% 100%}
-    100%{background-position:51% 0%}
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
 }
 
 
@@ -33,7 +33,7 @@ body::before {
   width: 100%;
   height: 100%;
   background: #000; /* Color de fondo, puedes ajustarlo según tus necesidades */
-  opacity: 0.4; /* Ajusta la opacidad según tus necesidades (0 totalmente transparente, 1 totalmente opaco) */
+  opacity: 0.5; /* Ajusta la opacidad según tus necesidades (0 totalmente transparente, 1 totalmente opaco) */
   z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido principal */
 }
 
