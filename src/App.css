@@ -1,12 +1,29 @@
 body {
-  position: relative;
-  background: url(../src/assets/img/giphy.gif);
-  background-position: center center;
-  /* background: linear-gradient(180deg, rgb(236, 213, 232)0%, rgb(50, 112, 118)100%); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+    background: linear-gradient(358deg, #0029d0, #9800d0, #d000a3, #6000ff, #0ed789);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 18s ease infinite;
+    -moz-animation: AnimationName 18s ease infinite;
+    animation: AnimationName 18s ease infinite;
+    overflow: hidden;
 }
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+
 
 body::before {
   content: "";
@@ -16,7 +33,7 @@ body::before {
   width: 100%;
   height: 100%;
   background: #000; /* Color de fondo, puedes ajustarlo según tus necesidades */
-  opacity: 0.6; /* Ajusta la opacidad según tus necesidades (0 totalmente transparente, 1 totalmente opaco) */
+  opacity: 0.4; /* Ajusta la opacidad según tus necesidades (0 totalmente transparente, 1 totalmente opaco) */
   z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido principal */
 }
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import './PressComponents.css'
-import pressImage from "../../assets/imagesIsa/isa6.png"
-import perfil from "../../assets/imagesIsa/isa6.png"
+import pressImage from "../../assets/pressimg/isa6.png"
+import perfil from "../../assets/imagesIsa/isa2.png"
 
 function PressComponents() {
   return (
