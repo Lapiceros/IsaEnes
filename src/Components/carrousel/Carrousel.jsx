@@ -1,5 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import "./Carrousel.css"
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
