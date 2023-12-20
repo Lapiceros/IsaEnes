@@ -1,5 +1,5 @@
 import './About.css'
-import IsaImage from '../../../assets/img/imagesIsa/isasdraw.jpg'
+import IsaImage from '../../../assets/img/imagesIsa/isa5.jpg'
 
 export default function About(){
     return(

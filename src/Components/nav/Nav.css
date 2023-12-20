@@ -17,13 +17,10 @@ li {
 }
 
 .subMenu {
-    opacity: 0;
-    visibility: hidden;
+    display: none;
     position: absolute;
     bottom: 100%; 
     left: 0;
-    transition: transform 0.3s ease-in-out;
-    transform: translateY(-10px);
 }
 
 .subMenu li {
@@ -36,9 +33,7 @@ li {
 }
 
 .menu li:hover .subMenu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
+    display: block;
 }
 
 .route:hover {
