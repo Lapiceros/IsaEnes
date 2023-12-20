@@ -1,4 +1,5 @@
 body {
+  overflow: hidden;
   background: linear-gradient(270deg, #12ca9b, #e10a8d, #220ae1, #640ae1, #e41818, #19bb51);
   background-size: 1200% 1200%;
 
