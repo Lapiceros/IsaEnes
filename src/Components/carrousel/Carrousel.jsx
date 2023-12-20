@@ -4,6 +4,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
+import "./Carrousel.css"
 
 import 'swiper/swiper-bundle.css'; // Añadido para cargar los estilos de Swiper
 
