@@ -1,5 +1,4 @@
 import './Home.css'
-import isa from '../assets/img/imagesIsa/isa2.png'
 
 
 function Home(){

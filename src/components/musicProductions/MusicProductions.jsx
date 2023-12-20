@@ -1,15 +1,21 @@
-import React from "react";
-import Swiper from "../swiper/Swiper";
+import React from 'react'
+import './MusicProductions.css'
 
-import isaimage1 from "../../assets/img/musicProductionsimg/isasproduction.png";
-import isaimage2 from "../../assets/img/musicProductionsimg/isasproduction2.png";
-import isaimage3 from "../../assets/img/musicProductionsimg/isasproduction3.png";
+import isaproduction from "../../assets/musicProductionsimg/isasproduction.png"
+import isaproduction2 from "../../assets/musicProductionsimg/isasproduction2.png"
+import isaproduction3 from "../../assets/musicProductionsimg/isasproduction3.png"
 
-export default function MusicProductions() {
-  const images = [isaimage1, isaimage2, isaimage3];
-  return (
-    <div>
-      <Swiper images={images} />
+import Carrousel from '../carrousel/Carrousel'
+
+function MusicProductions() {
+  const images = [isaproduction, isaproduction2, isaproduction3  ]
+  return(
+    <>
+    <div className='container'>
+    <Carrousel images={images} />
     </div>
-  );
+    </>
+  )
 }
+
+export default MusicProductions

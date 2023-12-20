@@ -1,27 +1,62 @@
-import React from "react";
-import Swiper from "../swiper/Swiper";
-import "./LiveSets.css"
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import albumImage1 from "../../assets/img/liveSetsimg/album1.jpeg";
-import albumImage2 from "../../assets/img/liveSetsimg/album2.jpeg";
-import albumImage3 from "../../assets/img/liveSetsimg/album3.jpeg";
-import albumImage4 from "../../assets/img/liveSetsimg/album4.jpeg";
-import albumImage5 from "../../assets/img/liveSetsimg/album5.jpeg";
-import albumImage6 from "../../assets/img/liveSetsimg/album6.jpeg";
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
 
-export default function MusicProductions() {
-  const images = [
-    { src: albumImage1, className: "gallery-item gallery-item-1" },
-    { src: albumImage2, className: "gallery-item gallery-item-2" },
-    { src: albumImage3, className: "gallery-item gallery-item-3" },
-    { src: albumImage4, className: "gallery-item gallery-item-4" },
-    { src: albumImage5, className: "gallery-item gallery-item-5" },
-    { src: albumImage6, className: "gallery-item gallery-item-6" },
-  ];
+import album1 from "../../assets/liveSetsimg/album1.jpeg"
+import album2 from "../../assets/liveSetsimg/album2.jpeg"
+import album3 from "../../assets/liveSetsimg/album3.jpeg"
+import album4 from "../../assets/liveSetsimg/album4.jpeg"
+import album5 from "../../assets/liveSetsimg/album5.jpeg"
+import album6 from "../../assets/liveSetsimg/album6.jpeg"
 
+import './LiveSets.css';
+
+// import required modules
+import { EffectCoverflow, Pagination } from 'swiper/modules';
+
+export default function LiveSets() {
   return (
-    <div>
-      <Swiper images={images} />
-    </div>
+    <>
+      <Swiper
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={'auto'}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        pagination={true}
+        modules={[EffectCoverflow, Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img href="" src={album1} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img href="" src={album2} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img href="" src={album3} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img href="" src={album4} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img href="https://soundcloud.com/isaenes/sets/techno-breaks-mixes" src={album5} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img href="" src={album6} />
+        </SwiperSlide>
+      </Swiper>
+    </>
   );
 }

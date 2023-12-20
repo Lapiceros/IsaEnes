@@ -1,4 +1,4 @@
-import MusicProductions from "../../components/musicProductions/MusicProductions";
+import MusicProductions from "../../Components/musicProductions/MusicProductions";
 
 export default function MusicPage() {
   return (

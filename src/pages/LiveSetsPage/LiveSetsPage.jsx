@@ -1,4 +1,4 @@
-import LiveSets from "../../components/liveSets/LiveSets";
+import LiveSets from "../../Components/liveSets/LiveSets";
 
 export default function LiveSetsPage() {
   return (
