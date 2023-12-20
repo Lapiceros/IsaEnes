@@ -11,7 +11,7 @@ function MusicProductions() {
   const images = [isaproduction, isaproduction2, isaproduction3  ]
   return(
     <>
-    <div className='container'>
+    <div>
     <Carrousel images={images} />
     </div>
     </>
