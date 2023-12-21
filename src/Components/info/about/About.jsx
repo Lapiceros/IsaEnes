@@ -1,6 +1,5 @@
 import './About.css'
-import IsaImage from '../../../assets/img/imagesIsa/isa5.jpg'
-
+import IsaImage from '../../../assets/imagesIsa/isa2.png'
 export default function About(){
     return(
         <div className='aboutContentPage'>

@@ -1,8 +1,9 @@
 import './Collaborations.css'
 import React from "react";
-import collaborations1 from "../../assets/img/musicProductionsimg/isasproduction.png";
-import collaborations2 from "../../assets/img/musicProductionsimg/isasproduction2.png";
-import collaborations3 from "../../assets/img/musicProductionsimg/isasproduction3.png";
+import collaborations1 from "../../assets/collaborationsimg/collaborations1.png"
+import collaborations2 from "../../assets/collaborationsimg/collaborations2.png"
+import collaborations3 from "../../assets/collaborationsimg/collaborations3.png"
+
 import Carrousel from '../carrousel/Carrousel';
 
 export default function Collaborations() {
