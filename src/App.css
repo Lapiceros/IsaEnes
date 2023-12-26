@@ -42,6 +42,7 @@ h1{
 }
 
 .mainContainer{
+  display: flex;
   justify-content: center;
   align-items: center;
 }
