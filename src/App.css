@@ -2,7 +2,7 @@ body {
   overflow: hidden;
   background: linear-gradient(270deg, #12ca9b, #e10a8d, #220ae1, #640ae1, #e41818, #19bb51);
   background-size: 1200% 1200%;
-
+  color: white;
   -webkit-animation: AnimationName 16s ease infinite;
   -moz-animation: AnimationName 16s ease infinite;
   animation: AnimationName 16s ease infinite;
@@ -42,7 +42,6 @@ h1{
 }
 
 .mainContainer{
-  display: flex;
   justify-content: center;
   align-items: center;
 }
