@@ -8,11 +8,11 @@ body {
     overflow: hidden;
 }
 
-main{
+/* main{
   max-height: 80vh;
   margin: 2rem 4rem 0 4rem;
   overflow-y: scroll;
-}
+} */
 @-webkit-keyframes AnimationName {
     0%{background-position:51% 0%}
     50%{background-position:50% 100%}
