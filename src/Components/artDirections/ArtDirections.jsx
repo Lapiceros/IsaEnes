@@ -11,9 +11,12 @@ import Carrousel from '../carrousel/Carrousel';
 
 export default function ArtDirections() {
   const images = [artimg1, artimg2, artimg3, artimg4, artimg5, artimg6, artimg7];
+  const imageLinks = [];
+
   return (
     <div>
-      <Carrousel images={images} />
+      <Carrousel images={images} imageLinks={imageLinks} />
     </div>
   );
 }
+

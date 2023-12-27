@@ -1,19 +1,26 @@
-import React from 'react'
-import './MusicProductions.css'
+// MusicProductions.js
+import React from 'react';
+import './MusicProductions.css';
 
-import isaproduction from "../../assets/musicProductionsimg/isasproduction.png"
-import isaproduction2 from "../../assets/musicProductionsimg/isasproduction2.png"
-import isaproduction3 from "../../assets/musicProductionsimg/isasproduction3.png"
+import isaproduction from "../../assets/musicProductionsimg/isasproduction.png";
+import isaproduction2 from "../../assets/musicProductionsimg/isasproduction2.png";
+import isaproduction3 from "../../assets/musicProductionsimg/isasproduction3.png";
 
-import Carrousel from '../carrousel/Carrousel'
+import Carrousel from '../carrousel/Carrousel';
 
 function MusicProductions() {
-  const images = [isaproduction, isaproduction2, isaproduction3]
-  return(
+  const images = [isaproduction, isaproduction2, isaproduction3];
+  const imageLinks = [
+    "https://soundcloud.com/isaenes/amusement-park",
+    "https://soundcloud.com/isaenes/floating-in-air",
+    "https://soundcloud.com/isaenes/isa-enes-bfh",
+  ];
+
+  return (
     <div>
-    <Carrousel images={images} />
+      <Carrousel images={images} imageLinks={imageLinks} />
     </div>
-  )
+  );
 }
 
-export default MusicProductions
+export default MusicProductions;

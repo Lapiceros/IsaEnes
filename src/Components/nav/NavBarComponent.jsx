@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import './Nav.css'
+import './NavBarComponent.css'
 import { NavLink } from 'react-router-dom'
 
-export default function NavBar() {
+export default function NavBarComponent() {
     const [isMenuVisible, setMenuVisible] = useState(false);
 
     const handleMenuToggle = () =>{
