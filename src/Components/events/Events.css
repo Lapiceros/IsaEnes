@@ -1,9 +1,9 @@
 .events article{
-
-    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
 
-
+.events article > * {
+    width: 20%;
 }

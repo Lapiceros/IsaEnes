@@ -8,6 +8,11 @@ body {
     overflow: hidden;
 }
 
+main{
+  max-height: 80vh;
+  margin: 2rem 4rem 0 4rem;
+  overflow-y: scroll;
+}
 @-webkit-keyframes AnimationName {
     0%{background-position:51% 0%}
     50%{background-position:50% 100%}
@@ -37,10 +42,9 @@ body::before {
   z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido principal */
 }
 
-h1{
+/* h1{
   margin-top: 50vh;
-}
-
+} */
 
 footer{
   position: fixed;
@@ -56,3 +60,8 @@ a{
   text-decoration: none;
 }
 
+:root p{
+  margin-left: unset;
+  opacity: unset;
+
+}

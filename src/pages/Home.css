@@ -3,4 +3,8 @@
     font-size: 5rem;
     letter-spacing: 5px;
     z-index: 1;
+    text-align: center;
+    margin-top: 50vh;
+    transform: translateY(-100%);
 }
+
