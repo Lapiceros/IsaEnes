@@ -8,13 +8,11 @@ import isaproduction3 from "../../assets/musicProductionsimg/isasproduction3.png
 import Carrousel from '../carrousel/Carrousel'
 
 function MusicProductions() {
-  const images = [isaproduction, isaproduction2, isaproduction3  ]
+  const images = [isaproduction, isaproduction2, isaproduction3]
   return(
-    <>
     <div>
     <Carrousel images={images} />
     </div>
-    </>
   )
 }
 

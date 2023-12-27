@@ -1,12 +1,22 @@
+.navBarContainer{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.921), rgba(0, 0, 0, 0.279));
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -10px;
+    
+}
+
 a {
     text-decoration: none;
     color: inherit;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 li {
     list-style: none;
-    color: #fff;
+    color: #ffffff;
 }
 
 .menu > li {
