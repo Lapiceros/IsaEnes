@@ -8,11 +8,12 @@ body {
   animation: AnimationName 16s ease infinite;
 }
 
-main{
+/* main{
   max-height: 80vh;
   margin: 2rem 4rem 0 4rem;
   overflow-y: scroll;
-}
+} */
+
 @-webkit-keyframes AnimationName {
   0%{background-position:0% 50%}
   50%{background-position:100% 51%}

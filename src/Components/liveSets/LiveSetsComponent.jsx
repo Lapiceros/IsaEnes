@@ -1,5 +1,5 @@
 import React from 'react'
-import './LiveSets.css';
+
 
 import album1 from "../../assets/liveSetsimg/album1.jpeg"
 import album2 from "../../assets/liveSetsimg/album2.jpeg"
@@ -10,15 +10,15 @@ import album6 from "../../assets/liveSetsimg/album6.jpeg"
 
 import Carrousel from '../carrousel/Carrousel'
 
-function LiveSets() {
+function LiveSetsComponent() {
   const images = [album1, album2, album3, album4, album5, album6 ]
   return(
-    <>
+ 
     <div>
     <Carrousel images={images} />
     </div>
-    </>
+
   )
 }
 
-export default LiveSets
+export default LiveSetsComponent

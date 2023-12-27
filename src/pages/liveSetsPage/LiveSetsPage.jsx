@@ -1,9 +1,9 @@
-import LiveSets from "../../Components/liveSets/LiveSets";
+import LiveSetsComponent from "../../Components/liveSets/LiveSetsComponent";
 
 export default function LiveSetsPage() {
   return (
     <div>
-      <LiveSets />
+      <LiveSetsComponent />
     </div>
   );
 }
