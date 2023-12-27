@@ -1,7 +1,7 @@
 body {
     background: linear-gradient(358deg, #0029d0, #9800d0, #d000a3, #6000ff, #0ed789);
     background-size: 1000% 1000%;
-
+    color: white;
     -webkit-animation: AnimationName 18s ease infinite;
     -moz-animation: AnimationName 18s ease infinite;
     animation: AnimationName 18s ease infinite;
@@ -41,11 +41,7 @@ h1{
   margin-top: 50vh;
 }
 
-.mainContainer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 footer{
   position: fixed;
   display: flex;

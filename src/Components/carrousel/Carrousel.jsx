@@ -5,7 +5,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
-import 'swiper/swiper-bundle.css'; // Añadido para cargar los estilos de Swiper
+//import 'swiper/swiper-bundle.css'; // Añadido para cargar los estilos de Swiper
 
 const Carrousel = ({ images }) => {
     return (
@@ -17,7 +17,7 @@ const Carrousel = ({ images }) => {
         coverflowEffect={{
             rotate: 50,
             stretch: 0,
-            depth: 100,
+            depth: 10,
             modifier: 1,
             slideShadows: true,
         }}

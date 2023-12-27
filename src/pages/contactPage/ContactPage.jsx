@@ -1,4 +1,4 @@
-import Contact from '../../components/info/contact/Contact'
+import Contact from "../../Components/contact/Contact"
 
 export default function ContactPage() {
     return(

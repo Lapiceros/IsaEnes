@@ -1,26 +1,24 @@
-import React from "react";
-import Swiper from "../swiper/Swiper";
-import "./LiveSets.css"
-import albumImage1 from "../../assets/img/liveSetsimg/album1.jpeg";
-import albumImage2 from "../../assets/img/liveSetsimg/album2.jpeg";
-import albumImage3 from "../../assets/img/liveSetsimg/album3.jpeg";
-import albumImage4 from "../../assets/img/liveSetsimg/album4.jpeg";
-import albumImage5 from "../../assets/img/liveSetsimg/album5.jpeg";
-import albumImage6 from "../../assets/img/liveSetsimg/album6.jpeg";
+import React from 'react'
+import './LiveSets.css';
 
-export default function LiveSets() {
-  const images = [
-    { src: albumImage1, className: "gallery-item gallery-item-1" },
-    { src: albumImage2, className: "gallery-item gallery-item-2" },
-    { src: albumImage3, className: "gallery-item gallery-item-3" },
-    { src: albumImage4, className: "gallery-item gallery-item-4" },
-    { src: albumImage5, className: "gallery-item gallery-item-5" },
-    { src: albumImage6, className: "gallery-item gallery-item-6" },
-  ];
+import album1 from "../../assets/liveSetsimg/album1.jpeg"
+import album2 from "../../assets/liveSetsimg/album2.jpeg"
+import album3 from "../../assets/liveSetsimg/album3.jpeg"
+import album4 from "../../assets/liveSetsimg/album4.jpeg"
+import album5 from "../../assets/liveSetsimg/album5.jpeg"
+import album6 from "../../assets/liveSetsimg/album6.jpeg"
 
-  return (
+import Carrousel from '../carrousel/Carrousel'
+
+function LiveSets() {
+  const images = [album1, album2, album3, album4, album5, album6 ]
+  return(
+    <>
     <div>
-      <Swiper images={images} />
+    <Carrousel images={images} />
     </div>
-  );
+    </>
+  )
 }
+
+export default LiveSets

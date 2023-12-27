@@ -9,7 +9,7 @@ function App() {
   
   return (
     <>
-    <main className='mainContainer'>
+    <main>
       <Router/>
     </main>
     <footer>

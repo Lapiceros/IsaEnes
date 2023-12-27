@@ -1,6 +1,7 @@
 import { Route, Routes} from "react-router-dom";
 import Home from './pages/Home'
-import About from './pages/aboutPage/AboutPage'
+import AboutPage from './pages/aboutPage/AboutPage'
+import ContactPage from './pages/contactPage/ContactPage'
 import MusicPage from "./pages/musicPage/MusicProductionsPage"
 import LiveSetsPage from "./pages/liveSetsPage/LiveSetsPage";
 import ArtDirectionsPage from "./pages/artDirectionsPage/ArtDirectionsPage";
@@ -22,6 +23,7 @@ function Router(){
             <Route path="/press" Component={PressPage} />
             <Route path='/musicproductions' Component={MusicPage} />
             <Route path='/livesets' Component={LiveSetsPage} />
+            <Route path='/contact' Component={ContactPage} />
         </Routes>
     )
 }
