@@ -10,8 +10,6 @@ import album6 from "../../assets/liveSetsimg/album6.jpeg"
 
 import Carrousel from '../carrousel/Carrousel'
 
-
-
 function LiveSets() {
   const images = [album1, album2, album3, album4, album5, album6 ]
   return(
@@ -24,4 +22,3 @@ function LiveSets() {
 }
 
 export default LiveSets
-

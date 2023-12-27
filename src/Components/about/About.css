@@ -1,0 +1,34 @@
+.aboutContentPage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    justify-content: space-around;
+    gap: 100px;
+    
+}
+
+.aboutContent {
+    display: flex;    
+    color: #FFF;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 400;
+    flex-direction: column;
+    gap: 30px;
+    width: 507px;
+}
+
+.aboutImage {
+    border-radius: 0.25rem;
+    background: lightgray 50% / cover no-repeat;
+    width: 350px;
+    height: 350px;
+
+}
+
+
+.navItem.selected {
+    color: #BF94FF;
+}
