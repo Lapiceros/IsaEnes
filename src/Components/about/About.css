@@ -4,6 +4,10 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    max-height: 80vh;
+    margin: 2rem 4rem 0 4rem;
+    overflow-y: scroll;
+    
 }
 
 .aboutContent {

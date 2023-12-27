@@ -13,7 +13,10 @@ body {
   margin: 2rem 4rem 0 4rem;
   overflow-y: scroll;
 } */
+<<<<<<< HEAD
 
+=======
+>>>>>>> a9849f65ba73d260e4c110f8cbd5b4d3b593c8d5
 @-webkit-keyframes AnimationName {
   0%{background-position:0% 50%}
   50%{background-position:100% 51%}
