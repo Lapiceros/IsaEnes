@@ -19,7 +19,7 @@ export default function NavBarComponent() {
             <li className='route' id='music'>MUSIC
                 <ul className='subMenu'>
                     <li className='route'><NavLink to="/livesets" activeClassname= 'active'>LIVE SETS</NavLink></li>
-                    <li className='route'><NavLink to="/musicproductions" activeClassname= 'active'>MUSIC PRODUCTIONS</NavLink></li>
+                    <li className='route'><NavLink to="/musicproductions" activeClassname= 'active'>PRODUCTIONS</NavLink></li>
                 </ul>
             </li>
             <li className='route'>ART
