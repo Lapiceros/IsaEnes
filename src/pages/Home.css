@@ -6,14 +6,14 @@
     align-items: center;
     font-size: 400px;
     color: rgba(225,225,225, .01);
-    background-image: url("https://www.creativefabrica.com/wp-content/uploads/2023/01/14/Flat-groovy-psychedelic-background-Graphics-57599029-1.jpg");
+    background-image: url("../assets/fondos/colores.jpg");
     background-repeat: repeat;
     -webkit-background-clip: text;
     animation: animate 15s ease-in-out infinite;
     text-align: center;
     text-transform: uppercase;
     font-weight: 900;
-    
+    filter: contrast(1.2);
   }
   
   
