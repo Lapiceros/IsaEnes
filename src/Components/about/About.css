@@ -33,3 +33,22 @@
 .navItem.selected {
     color: #BF94FF;
 }
+
+
+@media screen and (max-width: 950px) {
+    .aboutContentPage {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem
+    }
+    .aboutContent {
+        max-width: 100%;
+        
+    }
+
+    .aboutImage {
+      max-width: 80vh;
+      max-height: 80vh;
+      
+    }
+}

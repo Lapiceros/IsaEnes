@@ -19,3 +19,10 @@
 .events article > *:nth-last-child(1) {
  width: 38rem;
 }
+
+
+@media screen and (max-width: 600px) {
+    .events {
+
+    }
+}

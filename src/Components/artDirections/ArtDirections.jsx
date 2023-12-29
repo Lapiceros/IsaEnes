@@ -11,12 +11,21 @@ import artimg7 from "../../assets/artdirectionsimg/artimg7.png";
 import Carrousel from '../carrousel/Carrousel';
 
 export default function ArtDirections() {
+  const title = ["ART DIRECTIONS"]
   const images = [artimg1, artimg2, artimg3, artimg4, artimg5, artimg6, artimg7];
   const imageLinks = [];
+  const captions = [
+    "DESCRIPTION",
+    "DESCRIPTION",
+    "DESCRIPTION",
+    "DESCRIPTION",
+    "DESCRIPTION",
+    "DESCRIPTION",
+  ];
 
   return (
     <div>
-      <Carrousel images={images} imageLinks={imageLinks} />
+      <Carrousel  title={title} images={images} imageLinks={imageLinks} captions={captions} />
     </div>
   );
 }
