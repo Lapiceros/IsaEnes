@@ -1,6 +1,6 @@
 import './App.css'
 import Router from './Router'
-import NavBar from './Components/nav/NavBar'
+import NavBarComponent from './Components/nav/NavBarComponent'
 import Home from './pages/Home'
 
 
@@ -13,7 +13,7 @@ function App() {
       <Router/>
     </main>
     <footer>
-      <NavBar/>
+      <NavBarComponent/>
     </footer>
     </>
   )

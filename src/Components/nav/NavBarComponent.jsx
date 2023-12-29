@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import './Nav.css'
+import './NavBarComponent.css'
 import { NavLink } from 'react-router-dom'
 
-export default function NavBar() {
+export default function NavBarComponent() {
     const [isMenuVisible, setMenuVisible] = useState(false);
 
     const handleMenuToggle = () =>{
@@ -19,7 +19,7 @@ export default function NavBar() {
             <li className='route' id='music'>MUSIC
                 <ul className='subMenu'>
                     <li className='route'><NavLink to="/livesets" activeClassname= 'active'>LIVE SETS</NavLink></li>
-                    <li className='route'><NavLink to="/musicproductions" activeClassname= 'active'>MUSIC PRODUCTIONS</NavLink></li>
+                    <li className='route'><NavLink to="/musicproductions" activeClassname= 'active'>PRODUCTIONS</NavLink></li>
                 </ul>
             </li>
             <li className='route'>ART

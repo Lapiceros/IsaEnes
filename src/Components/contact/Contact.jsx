@@ -1,11 +1,29 @@
+import React, { useState } from 'react';
 import './Contact.css'
 
 export default function Contact() {
+    const [showEmail, setShowEmail] = useState({bookings: false, art: false, jewelry: false});
+
     return (
-        <div>
-            <div><h1><a>Bookings</a></h1><div>sheisaenes@gmail.com</div></div>
-            <div><h2><a>Art Directions, Collaborations and Modeling</a></h2><div>sheisaenes@gmail.com</div></div>
-            <div><h3><a>Jewelry</a></h3><div>sheisaenes@gmail.com</div></div>
+        <div className="contactContainer">
+            <section>
+                <h1 className='contactTitle'>
+                    <a className="contactAncor" onClick={() => setShowEmail({...showEmail, bookings: !showEmail.bookings})}>Bookings</a>
+                </h1>
+                {showEmail.bookings && <div className='email'>sheisaenes@gmail.com</div>}
+            </section>
+            <section>
+                <h1 className='contactTitle'>
+                    <a className="contactAncor" onClick={() => setShowEmail({...showEmail, art: !showEmail.art})}>Art Directions, Collaborations and Modeling</a>
+                </h1>
+                {showEmail.art && <div className='email'>sheisaenes@gmail.com</div>}
+            </section>
+            <section>
+                <h1 className='contactTitle'>
+                    <a className="contactAncor" onClick={() => setShowEmail({...showEmail, jewelry: !showEmail.jewelry})}>Jewelry</a>
+                </h1>
+                {showEmail.jewelry && <div className='email'>sheisaenes@gmail.com</div>}
+            </section>
         </div>
     )
 }

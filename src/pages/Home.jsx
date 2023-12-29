@@ -4,7 +4,7 @@ import './Home.css'
 function Home(){
     return(
         <>
-        <h1 id='title'>ISA ENES</h1>
+        <h1 className='text-container'>ISA ENES</h1>
         </>
     )
 }
