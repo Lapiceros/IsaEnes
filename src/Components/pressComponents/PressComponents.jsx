@@ -1,22 +1,29 @@
-import React from 'react'
-import './PressComponents.css'
-import pressImage from "../../assets/pressimg/isa6.png"
-import perfil from "../../assets/imagesIsa/isa2.png"
+import React from 'react';
+import './PressComponents.css';
+import { data } from './data';
 
 function PressComponents() {
   return (
-    <section className='press'>
-      <div className='pressCard'>
-        <img src={pressImage} alt='articulo de prensa' className='imageCard'></img>
-        <img src={perfil} alt='articulo de prensa' className='perfilImg'></img>
-        <div className="eventText">
-          <h4>Isa Penes</h4>
-          <p> Isa Penes Come muchos penes oh waos <br />
-            ¿quieres echar un vistazo de cuantos penes come isa?</p>
-        </div>
-      </div>
-    </section>
-  )
+    <div className='pressComponents'>
+      {data.map((item) => (
+        <section key={item.id} className='press'>
+          <div className='pressData'>
+            <h5 className='Header'>{item.Nombre}</h5>
+            <div className="imageContainer">
+              <img src={item.imgUrl} alt='articulo de prensa' className='imagePress'></img>
+              <div className="overlay">
+                <div className="eventText">
+                  <h4 className='title'>{item.Título}</h4>
+                  <p>{item.Reseña}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      ))}
+    </div>
+  );
 }
 
 export default PressComponents;
+
