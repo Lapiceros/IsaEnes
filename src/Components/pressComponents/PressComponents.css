@@ -4,29 +4,41 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-  }
-  
-  .pressData {
-    height: 70vh;
-  }
-  
-  .imageContainer {
+    overflow: scroll;
+}
+
+.pressData {
+    height: 70%;
+    transition: all 0.3s ease-in-out;
+}
+
+.imageContainer {
     position: relative;
-    width: 40vw;
-    opacity: 0.7; /* Ajusta el nivel de opacidad según tus preferencias */
-    transition: opacity 0.3s ease; 
-  }
-  
-  .imagePress {
+    width: 30vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.pressData:hover {
+    scale: 1.1;
+    box-shadow: white 0 0 3px 1px;
+
+}
+
+.imagePress {
     width: 100%;
-    opacity: 0.8; /* Ajusta el nivel de opacidad según tus preferencias */
-    transition: opacity 0.3s ease; /* Agrega una transición para suavizar el cambio */
-  }
-  .imageContainer:hover{
+    opacity: 0.8;
+    /* Ajusta el nivel de opacidad según tus preferencias */
+    transition: opacity 0.3s ease;
+
+}
+
+.imagePress:hover {
     opacity: 1;
-  }
-  
-  .overlay {
+
+
+}
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -37,47 +49,83 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: opacity 0.3s ease; /* Agrega una transición para suavizar el cambio */
-  }
-  
-  .overlay:hover {
+    transition: opacity 0.3s ease-in-out;
+    /* Agrega una transición para suavizar el cambio */
+}
+
+.overlay:hover {
     opacity: 1;
-  }
-  
-  .eventText {
+    backdrop-filter: blur(3px);
+
+}
+
+.eventText {
     text-align: center;
-    color: #fff; /* Color del texto */
+    color: #fff;
+    /* Color del texto */
     z-index: 1;
-  }
-  .title {
+}
+
+.title {
     font-size: x-large;
     margin-bottom: 2%;
 }
-.Header{
+
+.header {
+    font-size: x-large;
+}
+
+.review {
     font-size: large;
 }
+
 @media only screen and (max-width: 768px) {
     .pressComponents {
-      flex-direction: column; /* Cambia la dirección de la fila a columna */
-      align-items: stretch; /* Ajusta el alineado a lo largo del eje transversal */
+        flex-direction: column;
+        /* Cambia la dirección de la fila a columna */
+        align-items: center;
+        /* Ajusta el alineado a lo largo del eje transversal */
+        justify-content: space-around;
+        
     }
-  
-    .pressData {
-      height: auto; /* Ajusta la altura automáticamente en dispositivos más pequeños */
-    }
-  
-    .imageContainer {
-      width: 100%;
-    }
-  
-    .overlay {
-      opacity: 1; /* Muestra el texto por defecto en dispositivos más pequeños */
-      transition: none; /* Elimina la transición en dispositivos más pequeños */
-    }
-  
-    .imagePress {
-      opacity: 1; /* Muestra completamente la imagen en dispositivos más pequeños */
-      transition: none; /* Elimina la transición en dispositivos más pequeños */
-    }
-  }
 
+    .pressData {
+        height: auto;
+        /* Ajusta la altura automáticamente en dispositivos más pequeños */
+    }
+
+    .imageContainer {
+        position: relative;
+        width: 60%;
+    }
+
+    .overlay {
+        opacity: 1;
+        /* Muestra el texto por defecto en dispositivos más pequeños */
+        transition: none;
+        /* Elimina la transición en dispositivos más pequeños */
+        transform: translateX(100%);
+        
+    }
+
+    .pressData:hover,
+    .overlay:hover {
+        backdrop-filter: none;
+        scale: 1;
+        box-shadow: none;
+    }
+
+    .imagePress {
+        opacity: 1;
+        /* Muestra completamente la imagen en dispositivos más pequeños */
+        transition: none;
+        /* Elimina la transición en dispositivos más pequeños */
+    }
+    .header,
+    .title{
+        font-size: large;
+    }
+    .review{
+        font-size: small;
+    }
+}
