@@ -1,6 +1,5 @@
 // MusicProductions.js
 import React from 'react';
-import './MusicProductions.css';
 
 import isaproduction from "../../assets/musicProductionsimg/isasproduction.png";
 import isaproduction2 from "../../assets/musicProductionsimg/isasproduction2.png";
