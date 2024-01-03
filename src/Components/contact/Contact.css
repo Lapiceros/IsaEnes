@@ -1,26 +1,35 @@
 .contactContainer{
     display: flex;
     flex-direction: column;
-    font-size: 3.5rem;
-    justify-content: center;
-    margin: 2rem;
-    gap: 2rem;
     align-items: center;
+    margin-top: 15rem;
+
 }
 
 
 .contactAncor {
+
     text-decoration: underline !important; 
-    gap: 3rem;
+    font-size: 15rem;
     
 }
 
 .email{
-    width: 80%
+    
+    font-size: 5rem;
 }
 
 @media screen and (max-width: 600px) {
     .contactContainer {
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contactAncor {
+        font-size: 10rem;
+        
+    } 
+    .email{   
+        font-size: 4rem;
     }
 }
