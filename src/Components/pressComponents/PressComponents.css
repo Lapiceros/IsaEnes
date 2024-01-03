@@ -1,47 +1,131 @@
-.press {
+.pressComponents {
+    width: 100%;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    border-radius: 5%;
-    background: var(--white, #FFF);
-    margin: 2% 0 0 2%;
-    min-width: 350px;
-    max-width: 500px;
-    margin-top: 10%;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: scroll;
 }
 
-.pressCard {
-    height: 500px;
+.pressData {
+    height: 70%;
+    transition: all 0.3s ease-in-out;
+}
+
+.imageContainer {
+    position: relative;
+    width: 30vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.pressData:hover {
+    scale: 1.1;
+    box-shadow: white 0 0 3px 1px;
+
+}
+
+.imagePress {
+    width: 100%;
+    opacity: 0.8;
+    /* Ajusta el nivel de opacidad según tus preferencias */
+    transition: opacity 0.3s ease;
+
+}
+
+.imagePress:hover {
+    opacity: 1;
+
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    /* Agrega una transición para suavizar el cambio */
+}
+
+.overlay:hover {
+    opacity: 1;
+    backdrop-filter: blur(3px);
+
 }
 
 .eventText {
-    padding: 14% 6% 10% 15%;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5vw;
-    margin-top: -25%;
-
-}
-h4{
-    font-size: 1.5rem;
-}
-/* p{
-    margin-left: -15%;
-    opacity: 0.8;
-    font-size: 1.3rem;
-} */
-
-.imageCard {
-    width: 100%;
-    height: 45%;
-    border-radius: 5% 5% 0 0;
-
+    text-align: center;
+    color: #fff;
+    /* Color del texto */
+    z-index: 1;
 }
 
-.perfilImg {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin: 2% 0 0 2%;
+.title {
+    font-size: x-large;
+    margin-bottom: 2%;
+}
+
+.header {
+    font-size: x-large;
+}
+
+.review {
+    font-size: large;
+}
+
+@media only screen and (max-width: 768px) {
+    .pressComponents {
+        flex-direction: column;
+        /* Cambia la dirección de la fila a columna */
+        align-items: center;
+        /* Ajusta el alineado a lo largo del eje transversal */
+        justify-content: space-around;
+        
+    }
+
+    .pressData {
+        height: auto;
+        /* Ajusta la altura automáticamente en dispositivos más pequeños */
+    }
+
+    .imageContainer {
+        position: relative;
+        width: 60%;
+    }
+
+    .overlay {
+        opacity: 1;
+        /* Muestra el texto por defecto en dispositivos más pequeños */
+        transition: none;
+        /* Elimina la transición en dispositivos más pequeños */
+        transform: translateX(100%);
+        
+    }
+
+    .pressData:hover,
+    .overlay:hover {
+        backdrop-filter: none;
+        scale: 1;
+        box-shadow: none;
+    }
+
+    .imagePress {
+        opacity: 1;
+        /* Muestra completamente la imagen en dispositivos más pequeños */
+        transition: none;
+        /* Elimina la transición en dispositivos más pequeños */
+    }
+    .header,
+    .title{
+        font-size: large;
+    }
+    .review{
+        font-size: small;
+    }
 }
