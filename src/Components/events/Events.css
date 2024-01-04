@@ -1,0 +1,31 @@
+.events article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2.5rem;
+    font-size: 2.5rem;
+}
+
+.events article > * {
+    width: 80%;
+}
+
+.events article > *:nth-child(1),
+.events article > *:nth-child(2) {
+    width: 30rem;
+}
+
+
+.events article > *:nth-last-child(1) {
+ width: 38rem;
+}
+
+
+@media screen and (max-width: 600px) {
+    .events {
+
+    }
+}
+    .events article a .responsive {
+    display: inline;
+}

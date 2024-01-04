@@ -1,0 +1,180 @@
+/* NavBarComponent.css */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+    color: #ffffff;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.708), rgba(0, 0, 0, 0.44));
+}
+.phoneMenu{
+    display: none;
+}
+
+#menuBtn {
+    display: none;
+}
+
+.menu-list {
+    padding: 0 1rem 1rem 0;
+    font-size: 40px;
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.subMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.4%;
+    visibility: hidden;
+    position: absolute;
+    bottom: 100%;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-10px);
+    border: 2px solid rgba(255, 255, 255, 0.358);
+    background-color: black;
+    -webkit-box-shadow: 0px 0px 140px -60px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 140px -60px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 140px -60px rgba(255, 255, 255, 1);
+    border-radius: 16px;
+}
+
+.subMenu.show {
+    visibility: visible;
+    transform: translateY(0);
+}
+
+a:hover {
+    color: #BF94FF;
+    bottom: 10px;
+}
+
+.subMenu li:hover {
+    color: #BF94FF;
+}
+
+.menu-list li:hover .subMenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.route:hover {
+    color: #BF94FF;
+}
+
+.active {
+    color: #BF94FF;
+}
+
+
+@media screen and (max-width: 600px) {
+    footer {
+        position: fixed; 
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        z-index: 30;
+    }
+    ul >li {
+        margin: 10px;
+    }
+    .menu{
+        display: none;
+    }
+    .phoneMenu{
+        font-size: 45px;
+    }
+    
+    #menuBtn {
+        display: flex;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 40px;
+    }
+
+    nav.hide {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+    }
+    
+    nav.show {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        visibility: visible;
+        height: 95vh;
+    }
+
+    .menu-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .route{
+        margin:  10%;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        position: fixed; 
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: black;
+        z-index: 30;
+
+    }
+    .menu-list{
+        padding: 0 1rem 1rem 0;
+        font-size: 24px !important;
+        display: flex;
+        gap: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    footer {
+        position: fixed; 
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: black;
+        z-index: 30;
+
+    }
+    .menu-list {
+        padding: 0 1rem 1rem 0;
+        font-size: 24px;
+        display: flex;
+        gap: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+}

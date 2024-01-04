@@ -1,0 +1,54 @@
+.aboutContentPage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-height: 80vh;
+    margin: 2rem 4rem 0 4rem;
+    overflow-y: scroll;
+    
+}
+
+.aboutContent {
+      
+    color: #FFF;
+    text-align: center;
+    font-size: 2.6vw;
+    font-weight: 400;
+    flex-direction: column;
+   
+}
+
+.aboutImage {
+    border-radius: 0.25rem;
+    background: lightgray 50% / cover no-repeat;
+    width: auto;
+    height: 80vh;
+
+}
+
+
+.navItem.selected {
+    color: #BF94FF;
+}
+
+
+@media screen and (max-width: 950px) {
+    .aboutContentPage {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem
+    }
+    .aboutContent {
+        max-width: 100%;
+        font-size: 2.39vh;
+        
+    }
+
+    .aboutImage {
+      width: 69vw;
+      height: auto;
+      
+    }
+}

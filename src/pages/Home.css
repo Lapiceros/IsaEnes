@@ -1,0 +1,82 @@
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.sub-title-container {
+  font-size: 60px;
+}
+
+.text-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 400px;
+  color: rgba(225, 225, 225, 0.01);
+  background-image: url("../assets/fondos/colores.jpg");
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  animation: animate 15s ease-in-out infinite;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  filter: contrast(1.2);
+}
+
+@keyframes animate {
+  0%, 100% {
+    background-position: left top;
+  }
+  25% {
+    background-position: right bottom;
+  }
+  50% {
+    background-position: left bottom;
+  }
+  75% {
+    background-position: right top;
+  }
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub-title-container {
+    font-size: 40px;
+  }
+
+  .text-container {
+    font-size: 200px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* Media Query for medium-sized screens */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sub-title-container {
+    font-size: 50px;
+  }
+
+  .text-container {
+    font-size: 300px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* Add more media queries as needed for larger screens */
