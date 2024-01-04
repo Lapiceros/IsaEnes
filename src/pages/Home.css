@@ -27,6 +27,23 @@
   filter: contrast(1.2);
 }
 
+.homeLogo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  position: absolute;
+  bottom: 20%;
+}
+
+.homeLogo img{
+ width: 30px;
+}
+
+#soundLogo{
+  width: 40px;
+}
+
 @keyframes animate {
   0%, 100% {
     background-position: left top;

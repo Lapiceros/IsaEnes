@@ -8,7 +8,7 @@ export default function Contact() {
         <div className="contactContainer">
             <section>
                 <h1 className='contactTitle'>
-                    <a className="contactAncor" onClick={() => setShowEmail({...showEmail, bookings: !showEmail.bookings})}>Bookings</a>
+                    <a className="contactAncor" onClick={() => setShowEmail({...showEmail, bookings: !showEmail.bookings})}>Bookings ↗</a>
                 </h1>
                 {showEmail.bookings && <div className='email'>sheisaenes@gmail.com</div>}
             </section>

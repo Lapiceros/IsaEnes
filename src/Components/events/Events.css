@@ -1,9 +1,12 @@
-.events article{
+.events{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 2.5rem;
-    font-size: 2.5rem;
+    font-size: 10rem;
+
 }
 
 .events article > * {

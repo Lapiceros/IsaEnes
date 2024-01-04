@@ -1,35 +1,35 @@
-.contactContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 15rem;
-
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15rem;
 }
-
 
 .contactAncor {
-
-    text-decoration: underline !important; 
-    font-size: 15rem;
-    
+  width: 0px;
+  font-size: 15rem;
+  transition: all 0.3s ease-in-out;
 }
 
-.email{
-    
-    font-size: 5rem;
+.email {
+  font-size: 5rem;
+}
+
+.contactAncor:hover {
+  text-decoration: underline;
+  width: 100px;
 }
 
 @media screen and (max-width: 600px) {
-    .contactContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .contactAncor {
-        font-size: 10rem;
-        
-    } 
-    .email{   
-        font-size: 4rem;
-    }
+  .contactContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contactAncor {
+    font-size: 10rem;
+  }
+  .email {
+    font-size: 4rem;
+  }
 }
