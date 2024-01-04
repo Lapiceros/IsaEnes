@@ -54,6 +54,11 @@ footer {
     border-radius: 16px;
 }
 
+.subMenu.show {
+    visibility: visible;
+    transform: translateY(0);
+}
+
 a:hover {
     color: #BF94FF;
     bottom: 10px;
