@@ -7,7 +7,6 @@ import LiveSetsPage from "./pages/liveSetsPage/LiveSetsPage";
 import ArtDirectionsPage from "./pages/artDirectionsPage/ArtDirectionsPage";
 import JewelryPage from "./pages/jewelryPage/JewelryPage";
 import CollaborationsPage from "./pages/collaborationsPage/CollaborationsPage";
-import EventsPage from "./pages/eventsPage/EventsPage";
 import PressPage from './pages/pressPage/PressPage'
 
 
@@ -19,7 +18,6 @@ function Router(){
             <Route path='/artdirections' Component={ArtDirectionsPage} />
             <Route path='/jewelry' Component={JewelryPage} />
             <Route path='/collaborations' Component={CollaborationsPage} />
-            <Route path='/events' Component={EventsPage} />
             <Route path="/press" Component={PressPage} />
             <Route path='/musicproductions' Component={MusicPage} />
             <Route path='/livesets' Component={LiveSetsPage} />

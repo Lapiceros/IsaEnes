@@ -20,7 +20,6 @@ export default function NavBarComponent() {
                 <ul className='menu-list'>
                     <li className='route'><NavLink to="/" activeClassName='active' onClick={handleNavLinkClick}>HOME</NavLink></li>
                     <li className='route'><NavLink to="/about" activeClassName='active' onClick={handleNavLinkClick}>ABOUT</NavLink></li>
-                    <li className='route'><NavLink to="/events" activeClassName='active' onClick={handleNavLinkClick}>EVENTS</NavLink></li>
                     <li className='route' id='music'>MUSIC
                         <ul className='subMenu'>
                             <li className='route'><NavLink to="/livesets" activeClassName='active' onClick={handleNavLinkClick}>LIVE SETS</NavLink></li>
