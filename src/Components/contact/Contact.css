@@ -1,17 +1,33 @@
+.contact-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .contactContainer{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 15rem;
+    justify-content: center;
+    margin: auto;
+    font-size: xx-large;
+    gap: 1rem;
 
 }
-
+.contactMedia{
+    display: flex;
+    padding-inline: 1rem;
+    margin: 1rem;
+}
+hr{
+    margin-inline: 0.5rem;
+}
 
 .contactAncor {
 
     position: relative;
     text-decoration: underline !important; 
-    font-size: 15rem;
+    font-size:  5rem;
     
 }
 
@@ -54,4 +70,4 @@
     }
 }
 
-    
+

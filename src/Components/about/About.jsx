@@ -5,7 +5,9 @@ import IsaImage from "../../assets/imagesIsa/isa5.png"
 export default function About(){
     return(
         <div className='aboutContentPage'>
-             <img src={IsaImage} alt="Isa Enes" className="aboutImage" />
+             <div className="aboutImage">
+                <img src={IsaImage} alt="Isa Enes" />
+             </div>
              <div className="aboutContent">
                    <p>
                         Isa Enes, a multidisciplinary artist who was born and raised
