@@ -33,7 +33,7 @@ export default function NavBarComponent() {
                         </ul>
                     </li>
                     <li className='route'><NavLink to="/press" activeClassName='active' onClick={handleNavLinkClick}>PRESS</NavLink></li>
-                    <li className='route'><NavLink to="/collaborations" activeClassName='active' onClick={handleNavLinkClick}>COLLABORATIONS</NavLink></li>
+                    <li className='route'><NavLink to="/collaborations" activeClassName='active' onClick={handleNavLinkClick}>COLLABS</NavLink></li>
                     <li className='route'><NavLink to="/contact" activeClassName='active' onClick={handleNavLinkClick}>CONTACT</NavLink></li>
                 </ul>
             </nav>

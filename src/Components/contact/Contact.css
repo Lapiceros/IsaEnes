@@ -16,8 +16,8 @@
 }
 .contactMedia{
     display: flex;
-    padding-inline: 1rem;
-    margin: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.3em;
 }
 hr{
     margin-inline: 0.5rem;

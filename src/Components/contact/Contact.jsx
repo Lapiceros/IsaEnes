@@ -23,7 +23,7 @@ export default function Contact() {
                 <h2>
                     <a className="contactAncor" onClick={() => setShowEmail({...showEmail, artEnquiries: !showEmail.artEnquiries})}>Art Enquiries</a>
                 </h2>
-                {showEmail.showEmail && <div className='email'>sonofawitch.club@gmail.com</div>}
+                {showEmail.artEnquiries && <div className='email'>sonofawitch.club@gmail.com</div>}
             </section>
             <section>
                 <h2 className='contactTitle'>

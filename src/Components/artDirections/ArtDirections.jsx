@@ -13,14 +13,24 @@ import Carrousel from '../carrousel/Carrousel';
 export default function ArtDirections() {
   const title = ["ART DIRECTIONS"]
   const images = [artimg1, artimg2, artimg3, artimg4, artimg5, artimg6, artimg7];
-  const imageLinks = [];
+  const imageLinks = [
+    "https://www.instagram.com/p/CtqpRsdqQSA/?img_index=1",
+    "https://www.instagram.com/p/CtqpRsdqQSA/?img_index=1",
+    "https://www.instagram.com/p/CtqpRsdqQSA/?img_index=1",
+    "https://www.instagram.com/p/CfVzkFyNom4/?img_index=1",
+    "https://www.youtube.com/watch?v=1-pRYH36FxA",
+    "https://www.youtube.com/watch?v=1-pRYH36FxA",
+    "https://www.youtube.com/watch?v=1-pRYH36FxA",
+
+  ];
   const captions = [
-    "DESCRIPTION",
-    "DESCRIPTION",
-    "DESCRIPTION",
-    "DESCRIPTION",
-    "DESCRIPTION",
-    "DESCRIPTION",
+    "Granada Concert, 2023",
+    "Granada Concert, 2023",
+    "Granada Concert, 2023",
+    "Photoshoot by Paola Idrontino, 2022",
+    "Shortmovie OPÍA, 2022",
+    "Shortmovie OPÍA, 2022",
+    "Shortmovie OPÍA, 2022",
   ];
 
   return (
